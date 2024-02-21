@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
 const pages = ["PROJECTS"]; // list of pages included in the navigation bar
 const websites = ["GitHub", "LinkedIn"]; // list of websites included in the profile dropdown menu
@@ -59,8 +60,8 @@ const NavBar = () => {
               <Typography
                 key={page}
                 variant="h6"
-                component="a"
-                href="/projects"
+                component={Link}
+                to="/projects"
                 sx={{
                   m: 2,
                   ml: 0,
